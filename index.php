@@ -13,4 +13,7 @@ Flight::route('/login', function(){
     include 'views/login.php';
 });
 
+Flight::route('/register', function(){
+    include 'views/register.php';
+});
 ?>
