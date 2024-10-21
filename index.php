@@ -5,10 +5,12 @@ require 'flight/Flight.php';
 Flight::register('db', 'PDO', array('mysql:host=reliquid-db-reliquid.i.aivencloud.com:22381;dbname=reliquid','avnadmin', 'AVNS_UCk44b-vvmAo0cetie2'));
 
 // Routing untuk halaman beranda
-Flight::route('GET /', function(){
+Flight::route('/', function(){
     include 'views/home.php';
 });
 
-
+Flight::route('/login', function(){
+    include 'views/login.php';
+});
 
 ?>
